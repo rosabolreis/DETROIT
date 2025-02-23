@@ -1,0 +1,137 @@
+/*Resetando margens e padding para todos os elementos */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estilos gerais do corpo*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    line-height: 1.6;
+    padding: 20px;
+}
+/*Estilo seção Hero*/
+.hero {
+    position: relative;
+    text-align: center;
+    background-image: url(https://s.isanook.com/ga/0/ud/208/1041753/detroit-become-human.jpg?ip/crop/w1200h700/q80/webp);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /*overlay escuro*/
+    z-index: 1;
+}
+.hero h1, .hero h2, .hero p {
+    position: relative;
+    z-index: 2;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 255, 255, 0.8);
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 255, 255, 0.7);
+}
+.hero p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Seção dos Personagens*/
+
+.historia-personagens {
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.historia-personagens h2 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.historia-personagens h3 {
+    font-size: 1.8rem;
+    color: #00bcd4;
+    margin-top: 20px;
+}
+.historia-personagens p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Comparação Tec*/
+.comparacao-tec {
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.comparacao-tec h2 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.comparacao-tec p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Rodapé*/
+
+footer {
+    background-color: #121212;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+footer h3 {
+    font-size: 1.8rem;
+    color: #00bcd4;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+footer ul li a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
